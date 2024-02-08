@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Clínica Dental</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/post_dentist.js"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/index.html">Clínica Odontológica</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+    
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                        Gestión odontólogos
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="dentistList.html">Listar odontólogos</a>
+                        <a class="dropdown-item" href="dentistAdd.html">Agregar odontólogos</a>
+                    </div>
+                </li>
+    
+            </ul>
+    
+        </div>
+    </nav>
+
+<div class="container">
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link" href="/dentistList.html">Listar Odontólogos</a>
+        </li>
+    </ul>
+    <div class="row">
+        <div class="col-sm-7" style="background-color:#e6fffa; padding:10px; border-radius:3px">
+            <h3>Agregar odontólogos</h3>
+            <form id="add_new_dentist">
+                <div class="form-group">
+                    <label class="control-label" for="registration">Matrícula:</label>
+                    <input type="text" class="form-control" id="registration"
+                           placeholder="Ingrese la matrícula"
+                           name="registration" required></input>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="name">Nombre:</label>
+                    <input type="text" class="form-control" id="name"
+                           placeholder="Ingrese el nombre"
+                           name="name" required></input>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label" for="lastName">Apellido:</label>
+                    <input type="text" class="form-control" id="lastName"
+                           placeholder="Ingrese el apellido"
+                           name="lastName" required></input>
+                </div>
+
+
+                <button type="submit" class="btn btn-danger"
+                        id="btn-add-new-dentist">Guardar</button>
+            </form>
+            <div id="response" style="display:none; margin-top:10px">
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+2024-01-08 13:46:00.800282-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DENTIST" not found; SQL statement:
+SELECT * FROM DENTIST WHERE ID=? [42102-224]
+2024-01-08 13:46:26.126551-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DENTIST" not found; SQL statement:
+SELECT * FROM DENTIST WHERE ID=? [42102-224]
+2024-01-08 14:57:32.409327-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DENTIST" not found; SQL statement:
+SELECT * FROM DENTIST WHERE ID=? [42102-224]

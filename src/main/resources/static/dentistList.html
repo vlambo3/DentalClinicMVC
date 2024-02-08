@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Odontólogos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script text="text/javascript" src="/js/get_dentist.js"></script>
+    <script text="text/javascript" src="/js/update_dentist.js"></script>
+    <script text="text/javascript" src="/js/delete_dentist.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/index.html">Clínica Odontológica</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                    Gestión odontólogos
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="dentistList.html">Listar odontólogos</a>
+                    <a class="dropdown-item" href="dentistAdd.html">Agregar odontólogos</a>
+                </div>
+            </li>
+
+        </ul>
+
+    </div>
+</nav>
+
+
+<div class="container">
+    <div id="div_dentist_table">
+        <h1>Odontólogos</h1>
+        <div class="row col-md-6 table-responsive">
+            <table id="dentistTable" class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Matrícula</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody id="dentistTableBody">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6" style="display: none;
+											background-color:#e6fffa; padding:10px; border-radius:3px"
+             id="div_dentist_updating">
+            <form id="update_dentist_form">
+                <div class="form-group">
+                    <label >Id:</label>
+                    <input type="text" class="form-control" id="dentist_id" readonly>
+                </div>
+                <div class="form-group">
+                    <label >Matrícula:</label>
+                    <input type="text" class="form-control" placeholder="registration" id="registration">
+                </div>
+                <div class="form-group">
+                    <label >Nombre</label>
+                    <input type="text" class="form-control" placeholder="name" id="name">
+                </div>
+                <div class="form-group">
+                    <label >Apellido:</label>
+                    <input type="text" class="form-control" placeholder="lastName" id="lastName">
+                </div>
+
+
+                <button type="submit" class="btn btn-primary">Modificar</button>
+            </form>
+            <div id="response" style="display:none; margin:10px">
+            </div>
+        </div>
+    </div>
+    <hr>
+
+</div>
+</body>
+</html>

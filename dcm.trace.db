@@ -1,0 +1,6 @@
+2024-01-11 02:25:35.156213-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DENTISTS" not found (this database is empty); SQL statement:
+SELECT * FROM DENTISTS WHERE ID=? [42104-224]
+2024-01-11 02:27:20.055193-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DENTISTS" not found (this database is empty); SQL statement:
+SELECT * FROM DENTISTS WHERE ID=? [42104-224]
